@@ -8,28 +8,39 @@
 </head>
 
 <body>
+    <!-- Main container with vertical padding -->
     <main class="container py-5">
+        <!-- Main page header -->
         <h1 class="mb-4">E's Food For The Soul</h1>
 
+        <!-- Section for looking up recipe -->
         <section class="mb-5">
             <h2>Find a recipe</h2>
+            <!-- Input and button group to fetch a recipe by ID -->
             <div class="d-flex gap-2 mb-3">
                 <input id="recipe-id" type="number" class="form-control" value="1" min="1">
                 <button id="get-btn" class="btn btn-dark">Get Recipe</button>
             </div>
+            <!-- Status message display for recipe lookup -->
             <p id="status" class="fw-bold text-danger"></p>
+            <!-- div container where the retrieved recipe details will render -->
             <div id="recipe"></div>
         </section>
 
+        <!-- Section for adding a new dish/recipe -->
         <section>
             <h2>Add a dish</h2>
+            <!-- Input and button group to submit a new dish -->
             <div class="d-flex gap-2 mb-3">
                 <input id="dish-name" type="text" class="form-control" placeholder="New dish name">
                 <button id="post-btn" class="btn btn-warning">Add It</button>
             </div>
+            <!-- Status message display for post/add action -->
             <p id="post-status" class="fw-bold text-danger"></p>
+            <!-- Container where the saved dish response will render -->
             <div id="saved"></div>
         </section>
     </main>
+    <!-- link to JavaScript file -->
     <script src="script.js"></script>
 </body>
